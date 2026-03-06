@@ -1,0 +1,8 @@
+# railway.toml — deploy this alongside digest_bot.py
+
+[deploy]
+startCommand = "python digest_bot.py"
+
+# Runs every Monday at 7:00 AM Zurich time (UTC+1 winter / UTC+2 summer)
+# Adjust hour: 6 = 7am CET winter, 5 = 7am CEST summer
+cronSchedule = "0 6 * * 1"
